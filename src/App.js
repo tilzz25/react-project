@@ -5,7 +5,7 @@ import LogInComponent from './component/LogInComponent';
 
 function App() {
   const handleForm = (e) => {
-    const BtnName = e.target.value
+    const BtnName = e.target.id
     console.log(BtnName)
   }
   return (
