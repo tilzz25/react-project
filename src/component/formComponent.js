@@ -1,22 +1,32 @@
+import "./formComponent.css"
+
 const FormComponent = () => {
-    return(
-        <div>
-            <h1> REGISTRATION</h1>
-            <label for="FirstName"></label>
-            <input id="firstName" name="firstName" type="text" placeholder="First Name" required maxlength="25"/>
-            <label for="LastName"></label>
-            <input id="lastName" name="lastName" type="text" placeholder="Last Name" required maxlength="25"/>
-            <label for="Email"></label>
-            <input id="email" name="email" type="text" placeholder="Email" required />
-            <label for="PhoneNumber"></label>
-            <input id="phoneNumber" name="PhoneNumber" type="number" placeholder="Phone Number" required />
-            <label for="Password"></label>
-            <input id="password" name="Password" type="password" placeholder="Password" required />
-            <label for="Confirm Password"></label>
-            <input id="confirmPassword" name="Password" type="password" placeholder="Confirm Password" required />
-            <button id="submitButton">SUBMIT</button>
-        </div>
-    )
-    }
+  return (
     
-    export default FormComponent
+    <div className="form-container">
+      <h1 className="title">CREATE ACCOUNT</h1>
+      <hr></hr>
+      <label className="firstname" htmlFor="firstName">First Name</label>
+      <input  id="firstName" name="firstName" type="text" placeholder="First Name" required maxLength="25" />
+      
+      <label htmlFor="lastName">Last Name</label>
+      <input id="lastName" name="lastName" type="text" placeholder="Last Name" required maxLength="25" />
+      
+      <label htmlFor="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="Email" required />
+      
+      <label htmlFor="phoneNumber">Phone Number</label>
+      <input id="phoneNumber" name="phoneNumber" type="number" placeholder="Phone Number" required />
+      
+      <label htmlFor="password">Password</label>
+      <input id="password" name="password" type="password" placeholder="Password" required />
+      
+      <label htmlFor="confirmPassword">Confirm Password</label>
+      <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required />
+      
+      <button className="btn3" id="submitButton">REGISTER</button>
+    </div>
+  );
+};
+
+export default FormComponent;
