@@ -1,4 +1,4 @@
-import "./LogInComponent.css"
+import './LogInComponent.css'
 
 
 const LogInComponent = () => {

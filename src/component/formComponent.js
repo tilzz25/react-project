@@ -1,4 +1,4 @@
-import "./formComponent.css"
+import './formComponents.css'
 
 const FormComponent = () => {
   return (
